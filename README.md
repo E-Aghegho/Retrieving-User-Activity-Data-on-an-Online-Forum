@@ -28,3 +28,12 @@ The sections in this notebook follow the stages of the Data Analysis Lifecycle i
 - Analyse
 - Communicate
 - Maintain
+
+## Preliminary Steps: Create a Database
+First let's import Sqlite and the other libraries we will need.
+```python
+# Import Libraries
+import numpy as np
+import pandas as pd
+import sqlite3
+```
