@@ -37,3 +37,16 @@ import numpy as np
 import pandas as pd
 import sqlite3
 ```
+
+### Create the Database
+Now we will create the Sqlite database.  Here is some code that does this for you.  We use the `%load_ext` magic command to load the SQL Magic extension and then use `%sql` to connect to the database.
+```python
+# If the db does not exist, sqlite will create it.
+con = sqlite3.connect('chatdata.db')
+
+# loads sql magic
+%load_ext sql
+
+# connects sql magic command to the correct db
+%sql sqlite:///chatdata.db
+```
