@@ -50,3 +50,19 @@ con = sqlite3.connect('chatdata.db')
 # connects sql magic command to the correct db
 %sql sqlite:///chatdata.db
 ```
+#### Drop the `queries` table if it already exists
+The queries table will be our record of the queries created to answer the questions from the requirements spreadsheet.  As we will be running this Jupyter notebook a few times, let's drop (i.e. remove) the queries table so that we start fresh each time.  Here is the code to do this.  We use the `%%sql` magic command to tell Jupyter that we are going to write SQL in the cell.
+
+```python
+%%sql
+DROP TABLE IF EXISTS 'queries'
+```
+```
+ * sqlite:///chatdata.db
+Done.
+[]
+```
+# Task 1: Load the Data
+Now we can start loading the data.  The tables will be created as we load the data.  
+
+Note that some of these files are quite large, so make sure you have plenty of free memory!
