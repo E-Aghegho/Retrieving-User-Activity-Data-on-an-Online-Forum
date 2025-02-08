@@ -63,6 +63,4 @@ Done.
 []
 ```
 # Task 1: Load the Data
-Now we can start loading the data.  The tables will be created as we load the data.  
-
-Note that some of these files are quite large, so make sure you have plenty of free memory!
+The remaining tasks are on the file for the project. Please view at your leisure. 
