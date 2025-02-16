@@ -3,7 +3,7 @@
 ## Sqlite
 We are using a file system called **sqlite**. It looks and acts like a real single user relational database (RDB). sqlite3 comes packaged with python. You do not need to install the library. You simply import it (as below).
 
-- We are using Pandas to write and read to sqlite. Pandas will manage a lot of the complexity of dealing with a RDB. There are other ways of reading and writing to a RDB that are VERY common and often used in production systems.  
+- We are using Pandas to write and read to sqlite. Pandas will manage a lot of the complexity of dealing with a RDB. There are other ways of reading and writing to a RDB that are very common and often used in production systems.  
 
 - The most common other way is to read or write to the RDB row by row. As you can see Pandas puts the entire dataframe into the RDB or extracts a new dataframe from the RDB. These are not row by row operations. These are set operations. Set operations ARE more efficient. However, it is common to use row by row operations to avoid needing large memory computers to hold the dataframes. One row only takes a few bytes. An entire dataframe could be many gigabytes and even petabytes of data. Obviously you will end up with problems with your compute resource if your files are this big. This will not happen to you in this activity and may never happen to you while you are a data analyst. Please just be aware of this. 
 
